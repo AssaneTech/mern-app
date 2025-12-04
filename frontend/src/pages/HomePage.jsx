@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useProductStore } from "../store/product";
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 function HomePage() {
   const { products, setProducts, deleteProduct, updateProduct } = useProductStore();
@@ -9,7 +11,7 @@ function HomePage() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("/api/products");
+        const res = await fetch(`${API_URL}/api/products`);
         const data = await res.json();
         setProducts(data.data || []);
       } catch (error) {

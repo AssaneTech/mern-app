@@ -10,6 +10,7 @@ import SuccessPopup from "./components/SuccessPopup";
 
 
 function App() {
+    console.log("API_URL =", import.meta.env.VITE_API_URL);
   return (
     <Box minH ={"100vh"}>
       <Navbar/>
