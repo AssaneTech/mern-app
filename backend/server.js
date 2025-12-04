@@ -14,7 +14,7 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "http://192.168.1.100:5173",
-    "https://mern-app-frontend-coo5.onrender.com"
+    "https://mern-app-frontend-mkw2.onrender.com"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
